@@ -1,11 +1,18 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import "./Header.css"
+import MenuItem from "./MenuItem";
+import ClipPathAnimation from "./ClipPathAnimation";
 
 
 export default function Header() {
     const [muted, setMuted] = useState(true);
+    const [selectedMenu ,setSelectedMenu]=useState('Home')
   const videoRef = useRef(null);
+  const handleMenuClick=(e)=>{
+    setSelectedMenu(null)
+    setTimeout(()=>{setSelectedMenu(e)},100)
+  }
 
   const clickVideo = (e) => {
     if (videoRef.current) {
@@ -15,6 +22,7 @@ export default function Header() {
   };
 
   useEffect(() => {
+    dialogRef.current?.showModal()
     if (videoRef.current) {
       videoRef.current.play();
     }
@@ -30,7 +38,9 @@ export default function Header() {
    <>
    <div className="header">
    <div className="sides">
-    <a href="#" className="logo">BLOG</a>
+    <a href="#" className="logo">
+      <img className="logo-img" src="https://wildwarriorrace.in/wp-content/uploads/2024/03/ww-horizontal-1024x194.png" />
+    </a>
   </div>
   <div className="sides"> <a href="#" className="menu" onClick={openMenu} id="openMenu"> </a></div>
   <div className="jumbotron">
@@ -71,18 +81,25 @@ export default function Header() {
 
 <section className="content">
 <p>Add quote if required</p>
-  <p align="center"><a href="https://x.com/nodws" className="btn twtr" target="_b">Follow me on Xitter</a>
-  </p>
 </section>
 
 <dialog ref={dialogRef}>
-   <a href="#">Home</a>
- <a href="#">About Us</a>
- <a href="#">Wild Warrior Races</a>
- <a href="#">Wild Warrior X</a>
- <a href="#">Wild Warrior Infra</a>
- <a href="#">Gallery</a>
- <a href="#">Contact Us</a>
+ <div className="closeButton" onClick={()=>dialogRef.current?.close()}>X</div>
+
+{/* <!-- create svg inline with clipPath and animation -->
+<!-- do not hide SVG with display: none; it will disable anim/clipping --> */}
+
+<div className="menu-container">
+<MenuItem label="Home" clickHandle={handleMenuClick} selectedMenu={selectedMenu} />
+<MenuItem label="About Us" clickHandle={handleMenuClick} selectedMenu={selectedMenu} />
+<MenuItem label="Wild Warrior Races" clickHandle={handleMenuClick} selectedMenu={selectedMenu} />
+<MenuItem label="Wild Warrior X" clickHandle={handleMenuClick} selectedMenu={selectedMenu} />
+<MenuItem label="Wild Warrior Infra" clickHandle={handleMenuClick} selectedMenu={selectedMenu} />
+<MenuItem label="Gallery" clickHandle={handleMenuClick} selectedMenu={selectedMenu}/>
+<MenuItem label="Contact Us" clickHandle={handleMenuClick} selectedMenu={selectedMenu}/>
+</div>
+{selectedMenu && <ClipPathAnimation />}
+
 </dialog>
    </>
   );
