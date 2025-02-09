@@ -1,13 +1,19 @@
 import Image from "next/image";
 import Header from "./Header/Header";
-import Footer from "./Footer/Footer";
+import Footer from "./components/Footer";
 
 
-export default function Home() {
+function Home ({ components, pageProps }) {
   return (
    <>
    <Header />
-   <Footer/>
-   </>
+   <>
+      <components {...pageProps} />
+      <Footer />
+    </>
+    </>
   );
-}
+};
+
+export default Home;
+

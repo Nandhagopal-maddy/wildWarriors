@@ -27,3 +27,7 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+export const containerStyle = {
+  maxWidth: '1200px',
+  margin: '0 auto',
+};
