@@ -22,7 +22,6 @@ export default function Header() {
   };
 
   useEffect(() => {
-    dialogRef.current?.showModal()
     if (videoRef.current) {
       videoRef.current.play();
     }
@@ -78,10 +77,6 @@ export default function Header() {
     </div>
 
 </div>
-
-<section className="content">
-<p>Add quote if required</p>
-</section>
 
 <dialog ref={dialogRef}>
  <div className="closeButton" onClick={()=>dialogRef.current?.close()}>X</div>
