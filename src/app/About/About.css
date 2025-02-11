@@ -111,7 +111,7 @@ section {
     text-align: center;
     background: hsl(240, 44%, 7%);
     padding: 1rem;
-
+    min-height: 62vh;
 }
 
 

@@ -5,17 +5,17 @@ const Founder = ({data}) => {
         <div>
             <div className='founder animate__animated animate__fadeInDown'>
             <section>
-  <div class="card">
-    <div class="card__border"></div>
-    <div class="card__border-line"></div>
-    <div class="card__inner">
-      <div class="card__img">
-        <div class="img__athlete">
+  <div className="card">
+    <div className="card__border"></div>
+    <div className="card__border-line"></div>
+    <div className="card__inner">
+      <div className="card__img">
+        <div className="img__athlete">
           <img className='founder-image' src={data.image}alt={data.name} />
         </div>
       </div>
-      <div class="card__text">
-        <h1 class="name">{data.name}</h1>
+      <div className="card__text">
+        <h1 className="name">{data.name}</h1>
       </div>
     </div>
   </div>
