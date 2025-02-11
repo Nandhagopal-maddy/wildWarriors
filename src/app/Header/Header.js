@@ -22,7 +22,7 @@ export default function Header() {
   };
 
   useEffect(() => {
-    dialogRef.current?.showModal()
+   
     if (videoRef.current) {
       videoRef.current.play();
     }
