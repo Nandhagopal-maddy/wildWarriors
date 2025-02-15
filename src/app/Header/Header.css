@@ -1,6 +1,4 @@
 html,body{
-    margin:0;
-    height:100%;
     font-family: "Montserrat", sans-serif;
   
   }
@@ -35,7 +33,7 @@ html,body{
     overflow:hidden;
     display:flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
     align-content: flex-start;
     height:70vw;
@@ -103,7 +101,6 @@ html,body{
   }
   .sides, .info{
     flex: 0 0 auto;
-    width:50%;
     z-index: 11;
   }
 

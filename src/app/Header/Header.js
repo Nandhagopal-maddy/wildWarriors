@@ -79,10 +79,6 @@ export default function Header() {
 
 </div>
 
-<section className="content">
-<p>Add quote if required</p>
-</section>
-
 <dialog ref={dialogRef}>
  <div className="closeButton" onClick={()=>dialogRef.current?.close()}>X</div>
 
