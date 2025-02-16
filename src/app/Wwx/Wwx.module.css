@@ -1,44 +1,69 @@
 
 .heading1 {
     margin-left: 2vw;
-    font-size: 100px;
-    color: rgb(239, 123, 21);
+    font-size: 40px;
+    font-weight: 500;
+    color: #f77f07;
+    /* text-align: center; */
+    /* height: 11vh; */
+    margin-top: 12vh;
+}
+:root {
+  --e-global-color-66df98e: #f0eded50; 
+  --e-global-color-f047208: #faf7f782;/* Define the custom property */
 }
 
 .heading2 {
+  color: var(--e-global-color-66df98e);
+  -webkit-text-stroke-width: 1px;
+  stroke-width: 1px;
+  -webkit-text-stroke-color: var(--e-global-color-primary);
+  stroke: var(--e-global-color-primary);
+  text-align: left;
+    font-size: 65px;
+    font-style: italic;/*
     color: #0d0d0c;
-    margin-left: 10vw;
+    margin-left: 15vw;
     margin-right: 10vw;
-    text-align: left;
+    text-align: center;
     font-size: 65px;
     font-style: italic;
     font-family: inherit;
+    background-color: #69696994;
+    filter: drop-shadow(2px 0px 1px #ff8210);*/
 }
 
 .heading3 {
-  margin-left: 2vw;
+
   font-size: 30px;
   text-align: center;
-  color: rgb(239, 123, 21);
+  font-style: italic;
+  font-weight: bold;
+  background-color: #69696994;
+}
+.quote{
+  height: 10vh;
+  width: 7vw;
 }
 
 .pointerBox {
-  background-color: white;
+  background-color: #69696994;
   border-radius: 10px;
   margin-left: 11vw;
   margin-right: 12vw;
   height: 20vh;
 }
 .box {
-    background-color: white;
+    background-color: rgb(12, 12, 12);
     border-radius: 10px;
     margin-left: 11vw;
     margin-right: 12vw;
     height: 20vh;
+    display: flex;
 }
 
 .xstyle {
-    color: orangered;
+  color: rgb(8, 3, 1);
     font-family: 'Bristle Brush Script';
     width: 50px;
     font-size: 75px;
@@ -53,20 +78,26 @@
   
   .charcoal {
     font-family: 'Charcoal', sans-serif;
-    color: orangered;
     width: 50px;
     font-size: 75px;
     font-weight: bold;
+    color: var(--e-global-color-66df98e);
+    -webkit-text-stroke-width: 1px;
+    stroke-width: 1px;
+    -webkit-text-stroke-color: var(--e-global-color-primary);
+    stroke: var(--e-global-color-primary);
   }
 
   .box1 {
-    background-color: #ff8210;
-    color: #0d0d0c;
-    height: 250px;
-    width: 400px;
-    padding: 20px;
+    background-color: #0b0601;
+    color: #e0e0e0;
+    height: 18vh;
+    width: 80vw;
+    padding: 10px;
     border-radius: 10px;
-    margin-left: 20px;
+    margin-left: 5vw;
+    text-align: center;
+    display: flex;
   }
 
   .list {
@@ -91,14 +122,13 @@
   .box3 {
     background-color: #ff8210;
     border-radius: 10px;
-    margin-top: 10px;
+    font-weight: 700;
     width: 55vw;
-    height: 41vh;
-    padding: 20px;
+    text-align: center;
+    height: 10vh;
+    padding: 10px;
     margin-right: 15vh;
+    margin-left: 45vh;
   }
   
-  .container {
-    display: flex;
-    justify-content: space-between;
-  }
+  
