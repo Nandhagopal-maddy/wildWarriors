@@ -2,7 +2,6 @@
     width:97vw;
     margin:0vw 1vw;
     margin-top:20vh;
-    cursor: pointer;
     position: relative;
 }
 .race-head{
@@ -75,7 +74,8 @@
 }
 .card{
     width: fit-content;
-    background: linear-gradient(71deg, #f5a43f, #00d4fee0);
+    background: rgb(92, 43, 43);
+    color: orange;
 }
 .upcoming-poster{
     height:60vh;
@@ -93,4 +93,16 @@
 }
 .prize-money{
     text-align: center;
+}
+.icons{
+    height:5vh;
+    width:3vw;
+}
+.icon-ladder{
+background-image: url('/icons/ladder.svg');
+background-repeat: repeat-x;
+width:100%;
+border: 0;
+outline: none;
+text-decoration: none;
 }

@@ -113,7 +113,9 @@ const Races = () => {
           <div className='upcoming-race col-md-6'>
      <div className='upcoming-card-container'>
      <div className='card p-2'>
-        <img src='/images/encounter.png' className='upcoming-poster' />
+        {/* <img src='/images/encounter.png' className='upcoming-poster' /> */}
+        <div>
+        </div>
         <div className='ur-race-name'>{races[0].name}</div>
         <div className='mini-desc'>{races[0].miniDesc}</div>
         <div>Mark your calendar on {races[0].eventDate}</div>

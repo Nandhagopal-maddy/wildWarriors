@@ -22,6 +22,7 @@ export default function Header() {
   };
 
   useEffect(() => {
+   
     if (videoRef.current) {
       videoRef.current.play();
     }
