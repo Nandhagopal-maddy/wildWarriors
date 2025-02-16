@@ -1,16 +1,25 @@
 .races-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width:99vw;
-    overflow-x: scroll;
-    cursor: grab;
+    width:97vw;
+    margin:0vw 1vw;
+    margin-top:20vh;
+    cursor: pointer;
     position: relative;
-    touch-action: none; 
+}
+.race-head{
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 3em;
+    border: 5px solid #e35f12;
+    border-top: none;
+    border-bottom: none;
+    width: fit-content;
+    padding: 0vw 0.5vw;
 }
 .race-btn{
     position: absolute;
-    color: orange;
+    color: #e35f12;
     z-index: 20;
 }
 .left-0{
@@ -31,12 +40,16 @@
     transform:scale(1.1);
 }
 .race-card{
-    height:50vh;
     min-width:30vw;
-    background-color: white;
+    background-color: #272727;
     margin:1em;
     color: black;
     transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px white
+}
+.race-card:hover{
+    transform: scale(1.01);
 }
 
 .races-container::-webkit-scrollbar {
@@ -47,3 +60,37 @@
     -ms-overflow-style: none;  
     scrollbar-width: none;  
   }
+.calendar{
+    background-image: url('/icons/calendar.svg');
+    height: 18vh;
+    width: 6vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.upcoming-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    width: fit-content;
+    background: linear-gradient(71deg, #f5a43f, #00d4fee0);
+}
+.upcoming-poster{
+    height:60vh;
+    padding:2em;
+}
+.ur-race-name{
+    font-size: 2em;
+    padding-left: 0.5vw;
+    font-weight: 900;
+}
+.mini-desc{
+    font-size: 1em;
+    padding-left: 0.5vw;
+    font-weight: 400;
+}
+.prize-money{
+    text-align: center;
+}

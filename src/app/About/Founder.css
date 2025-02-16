@@ -5,7 +5,7 @@
     display: flex;
     font-weight: 900;
     box-shadow:inset 0px -100px 300px 50px black; 
-    outline: 3px solid orange;
+    outline: 3px solid #e35f12;
     padding: 1em;
      
 }

@@ -120,7 +120,7 @@ margin-top:5vh;
     white-space: nowrap;
   }
   .twelve:before {
-    background-color: orange;
+    background-color: #e35f12;
     content: "";
     display: block;
     height: 10px;
@@ -129,7 +129,7 @@ margin-top:5vh;
     animation: slide-to-left 500ms ease-in;
   }
   .twelve:after {
-    background-color: orange;
+    background-color: #e35f12;
     content: "";
     display: block;
     position: absolute;
