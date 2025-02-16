@@ -7,6 +7,8 @@ import Footer from "./components/Footer";
 import History from "@/History/History";
 import Wwinfra from "@/Wwinfra/Wwinfra";
 import Wwx from "@/Wwx/Wwx";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const inter = Inter({ subsets: ['latin'] })
 export default function Home() {

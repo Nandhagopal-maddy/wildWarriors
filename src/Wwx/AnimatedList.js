@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Wwx.module.css'
 import { motion } from 'framer-motion';
 
-const items = ['* Unique courses offering unforgettable memories, indoors or outdoors.', '* Expert management from start to finish.', '* Who is it for? If your group is aged between 06-60 years ', '* 17 events and 6200 participants so far (School sports day, Corporate Events, Team bonding, Outbound Training, Birthday Parties etc.) '];
+const items = ['Unique courses offering unforgettable memories, indoors or outdoors.', 'Expert management from start to finish.', 'Who is it for? If your group is aged between 06-60 years ', '17 events and 6200 participants so far (School sports day, Corporate Events, Team bonding, Outbound Training, Birthday Parties etc.) '];
 
 const listVariants = {
   hidden: { opacity: 0 },
@@ -24,12 +24,11 @@ const AnimatedList = () => {
     <motion.ul
       initial="hidden"
       animate="visible"
-      className={styles.box3}
       variants={listVariants}
       style={{ listStyleType: 'none' }}
     >
       {items.map((item, index) => (
-        <motion.li key={index} variants={itemVariants} style={{ marginBottom: '10px' }}>
+        <motion.li key={index} variants={itemVariants} className={styles.box3} style={{ marginBottom: '10px' }}>
           {item}
         </motion.li>
       ))}
