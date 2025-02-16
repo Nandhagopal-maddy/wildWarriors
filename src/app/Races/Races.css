@@ -144,3 +144,58 @@
     margin-top: 1vh;
     
 }
+@media (max-width: 768px) {
+    .races-container {
+        width: 100vw;
+        margin: 0;
+        margin-top: 2vh;
+    }
+    .race-head {
+        font-size: 1.5em;
+        padding: 0 1vw;
+        margin-bottom: 1vh;;
+    }
+    .race-card {
+        min-width: 80vw;
+        margin: 1em 0;
+    }
+    .calendar {
+        height: 4vh;
+        width: 7vw;
+    }
+    .upcoming-card-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .races-card {
+        margin: 2vh 0;
+    }
+    .back {
+        height: auto;
+        padding: 2vh 0;
+        margin: 0px 12vw;
+        line-height: 4.69vh;
+    }
+    .big {
+        font-size: 2em;
+    }
+    .upcoming-poster {
+        height: 40vh;
+    }
+    .ur-race-name {
+        font-size: 1em;
+    }
+    .race-location {
+        height: 2vh;
+        width: 2vw;
+    }
+    .location-name {
+        font-size: 0.8em;
+    }
+    .prize-money {
+        font-size: 3em;
+    }
+    .race-description {
+        font-size: 0.7em;
+    }
+}

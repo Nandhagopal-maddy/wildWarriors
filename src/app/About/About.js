@@ -115,7 +115,7 @@ of India.
                 <div className='founders-head twelve'>Meet Our Founders</div>
                 <div className='founders-container row'>
                 {founders.map((founder,index)=><>
-                    <div className='col-md-3' key={index}>
+                    <div className='col-md-3 col-6 founder' key={index}>
                     <Founder data={founder} key={index} />
                     </div>
                 </>)}

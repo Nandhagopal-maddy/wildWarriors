@@ -64,7 +64,7 @@ const Races = () => {
        <>
        <div
         className='races-container'>
-          <div className='race-head d-flex'>Our Upcoming Events <div className='calendar'></div></div>
+          <div className='race-head d-flex'>Our Upcoming Events &nbsp; <div className='calendar'></div></div>
           <div className='row'>
           <div className='upcoming-race col-md-6'>
           <ReactCardFlip isFlipped={isFlipped[0]} flipDirection="horizontal">
@@ -125,19 +125,18 @@ const Races = () => {
         <div className='upcoming-race col-md-6'>
         <ReactCardFlip isFlipped={isFlipped[1]} flipDirection="horizontal">
           {/* front */}
-     <div className='upcoming-card-container'>
+          <div className='upcoming-card-container'>
      <div className='card races-card'>
         <img src='/images/mountain-climb.jpg' className='upcoming-poster' />
         <div>
         </div>
         <div className='ur-race-name'>{races[1].name}</div>
-        <div> {races[1].Description} </div>
-        {races[1].locationAddress != '' && races[1].locationLink != '' &&<div className='d-flex justify-content-center'>
+        <div> {races[1].miniDesc} </div>
+        <div className='d-flex justify-content-center'>
           <a target='_blank' className='location-name' href={races[1].locationLink}> {races[1].locationAddress} </a> 
           &nbsp;
           <img className='race-location' src='/location.svg' />
-        </div>}
-      
+        </div>
       </div>
      </div>
      {/* back */}

@@ -11,9 +11,9 @@ const Cards = () => {
     return (
       <div className={styles.cardsContainer}>
         <div className={styles.buttonsContainer}>
-          <button onClick={() => handleButtonClick(0)}>Introduction</button>
-          <button onClick={() => handleButtonClick(1)}>3-step process</button>
-          <button onClick={() => handleButtonClick(2)}>Inclusion</button>
+          <button className={`${activeCard === 0 ? styles.buttonActive : ''}`} onClick={() => handleButtonClick(0)}>Introduction</button>
+          <button className={`${activeCard === 1 ? styles.buttonActive : ''}`} onClick={() => handleButtonClick(1)}>3-step process</button>
+          <button className={`${activeCard === 2 ? styles.buttonActive : ''}`} onClick={() => handleButtonClick(2)}>Inclusion</button>
         </div>
         <div className={styles.cardsWrapper}>
           <div className={`${styles.card} ${activeCard === 0 ? styles.active : ''}`}>

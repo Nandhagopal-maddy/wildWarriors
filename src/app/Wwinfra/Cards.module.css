@@ -21,14 +21,13 @@
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background-color: #ff8210;
-  color: #0b0909;
+  color: #ff8210;
   font-weight: bolder;
   cursor: pointer;
 }
 
 .buttonsContainer button:hover {
-  background-color: #ff8210;
+  background-color: #ff84104c;
 }
 
 .cardsWrapper {
@@ -59,4 +58,37 @@
 .card.active {
   opacity: 1;
   transform: translateY(0);
+}
+button.buttonActive{
+  background-color: #ff8210;
+  color:black
+}
+@media (max-width: 768px) {
+  .cardsContainer {
+    width: 98vw;
+    padding: 0px;
+    height:45vh;
+  }
+
+  .buttonsContainer {
+    width: 98vw;
+    margin-bottom: 2vh;
+    height: fit-content;
+    justify-content: flex-end;
+    margin-left: 4vw;
+  }
+
+  .buttonsContainer button {
+    width: 80%;
+  }
+
+  .cardsWrapper {
+    width: 100vw;
+    height: 30vh;
+  }
+
+  .card {
+    font-size: medium;
+    padding: 10px;
+  }
 }

@@ -17,49 +17,22 @@ export default function History() {
             delay:'500ms'
         }
     ]
-    const containerStyle = {
-        display: 'flex',
-        flexDirection: 'column', 
-        border: '2px solid #000',
-        borderRadius: '2px',
-        boxShadow: '0 4px 8px rgb(249, 137, 0)',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        height: 'auto',
-        marginTop: '7vh',
-        backgroundColor: '#ff8210',
-      };
     
-      const boxStyle = {
-        marginLeft: '15px',
-        marginRight: '10px',
-        padding: '20px',
-       // border: '2px solid #000',
-        borderRadius: '10px',
-        backgroundColor: '#ff8210',
-      //  color: '#ff8210', 
-       // boxShadow: '0 4px 8px #000000',
-        textAlign: 'justify',
-        fontSize: '18px',
-        lineHeight: '1.6',
-        height: '30vh',
-        fontWeight: 'bold',
-      };
      
   return (
     <><div className={styles.historyContainer}>
-         <div style={containerStyle}>
-      <div style={boxStyle}>
+         <div className={styles.containerStyle}>
+      <div className={styles.boxStyle}>
       <FontAwesomeIcon icon={faRunning} style={{ fontSize: '40px' , marginLeft: '20px'}} />  
       <h1>Seasons</h1>
       <p className={styles.statsStyle}>7</p>
       </div>
-      <div style={boxStyle}>
+      <div className={styles.boxStyle}>
         <FontAwesomeIcon icon={faFlagCheckered} style={{ fontSize: '35px', marginLeft: '60px'}} />
         <h1>Races Organised</h1>
         <p className={styles.statsStyle}> 73</p>
       </div>
-      <div style={boxStyle}>
+      <div className={styles.boxStyle}>
         <FontAwesomeIcon icon={faUsers} style={{fontSize: '30px', marginLeft:'30px'}} />
         <h1>Participants</h1>
         <p className={styles.statsStyle}>21K+</p>     
@@ -111,18 +84,18 @@ export default function History() {
                       <span className={styles.locatorsName}>Dambulla, Srilanka</span>
                   </div>
               </div>
-              <div style={containerStyle}>
-          <div style={boxStyle}>
+              <div className={styles.containerStyle}>
+          <div className={styles.boxStyle}>
             <FontAwesomeIcon icon={faEye} style={{fontSize: '30px', marginLeft: '30px'}} />
         <h1>Spectators</h1>
         <p className={styles.statsStyle}>40K+</p>
       </div>
-      <div style={boxStyle}>
+      <div className={styles.boxStyle}>
         <FontAwesomeIcon icon={faRoadBarrier } style={{fontSize: '40px', marginLeft:'55px'}} />
       <h1>Obstacles Overcome</h1>
         <p className={styles.statsStyle}>300K+</p>
       </div>
-      <div style={boxStyle}>
+      <div className={styles.boxStyle}>
       <FontAwesomeIcon icon={faRoad } style={{fontSize: '35px', marginLeft:'40px'}} />
       <h1>Kilometres Run</h1>
       <p className={styles.statsStyle}>90K+</p>

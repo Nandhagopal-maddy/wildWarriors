@@ -36,7 +36,6 @@ html,body{
     justify-content: space-between;
     align-items: flex-start;
     align-content: flex-start;
-    height:60vw;
     width:99vw;
     color:#080000;
     border-radius: 0 0 20px 20px;
@@ -182,4 +181,13 @@ a:focus-visible{
 .menu-container{
   display: flex;
   flex-direction: column;
+}
+@media (max-width: 600px) {
+  .about-heading {
+    font-size: medium !important;
+  }
+  .about-content{
+    margin-top:3vh !important;
+  }
+  
 }

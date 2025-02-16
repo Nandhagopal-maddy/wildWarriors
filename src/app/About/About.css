@@ -114,10 +114,10 @@ margin-top:5vh;
     font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
-    width: 205px;
     text-align: center;
     margin-left: 28%;
     white-space: nowrap;
+    width: fit-content;
   }
   .twelve:before {
     background-color: #e35f12;
@@ -153,5 +153,42 @@ margin-top:5vh;
         }
         100% {
         transform: translateX(0);
+        }
+    }
+    @media (max-width: 768px) {
+        .our-vision {
+            font-size: 8em !important;
+        }
+        .vision-image-container{
+            margin-left: 0vw !important;
+        }
+        .vision-image-container img{
+            width:82vw;
+        }
+        .community-container{
+            font-size: 1em !important;
+        }
+        .founders-head{
+            margin-top:3vh;
+        }
+        .twelve{
+            font-size: 2.1em;
+            margin-left: 4%;
+        }
+        .twelve:before{
+            width:25vw;
+        }
+        .twelve:after{
+            width:25vw;
+            left:72vw;
+        }
+        .founders-container{
+            width: 95vw;
+            margin-left: 2vw;
+            margin-top:4vh;
+        }
+        .founders-container .founder{
+            margin-bottom: 5vh;
+            
         }
     }
