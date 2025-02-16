@@ -1,12 +1,11 @@
 
 .heading1 {
-    margin-left: 2vw;
-    font-size: 40px;
+    font-size: 4em;
     font-weight: 500;
     color: #f77f07;
     /* text-align: center; */
     /* height: 11vh; */
-    margin-top: 12vh;
+    margin-top: 6vh;
 }
 :root {
   --e-global-color-66df98e: #f0eded50; 
@@ -14,14 +13,17 @@
 }
 
 .heading2 {
+  margin-top: -5vh;
   color: var(--e-global-color-66df98e);
   -webkit-text-stroke-width: 1px;
   stroke-width: 1px;
   -webkit-text-stroke-color: var(--e-global-color-primary);
   stroke: var(--e-global-color-primary);
-  text-align: left;
-    font-size: 65px;
-    font-style: italic;/*
+  text-align: center;
+    font-size: 4em;
+    font-style: italic;
+    grid-area: heading;
+    /*
     color: #0d0d0c;
     margin-left: 15vw;
     margin-right: 10vw;
@@ -56,18 +58,10 @@
 .box {
     background-color: rgb(12, 12, 12);
     border-radius: 10px;
-    margin-left: 11vw;
+    margin-left: 6vw;
     margin-right: 12vw;
     height: 20vh;
     display: flex;
-}
-
-.xstyle {
-  color: rgb(8, 3, 1);
-    font-family: 'Bristle Brush Script';
-    width: 50px;
-    font-size: 75px;
-    font-weight: bold;
 }
 
 /* Import the Charcoal font */
@@ -120,15 +114,49 @@
   }
 
   .box3 {
-    background-color: #ff8210;
+    background-color:#0b0601;
     border-radius: 10px;
-    font-weight: 700;
-    width: 55vw;
+    font-weight: 1000;
+    width: 35vw;
     text-align: center;
-    height: 10vh;
-    padding: 10px;
-    margin-right: 15vh;
-    margin-left: 45vh;
+    height: 17vh;
+    padding: 1vh;
+    font-style:italic;
+    font-size: large;
+    margin-right: 10vh;
+    margin-left: 18vh;
+    margin-top: -2vh;
+    border: 2px solid #f77f07;
+    color: #f77f07;
   }
   
+  .box4 {
+    display: flex;
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "item1 item2"
+    "heading heading"
+    "item3 item4";
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+  }
+  .gridItem:nth-child(1) {
+    grid-area: item1;
+  }
   
+  .gridItem:nth-child(2) {
+    grid-area: item2;
+  }
+  
+  .gridItem:nth-child(3) {
+    grid-area: item3;
+  }
+  
+  .gridItem:nth-child(4) {
+    grid-area: item4;
+  }

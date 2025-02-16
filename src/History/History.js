@@ -2,6 +2,7 @@ import Image from 'next/image';
 import styles from './History.module.css';
 import { useEffect } from 'react';
 import { color } from 'framer-motion';
+import CountUp from 'react-countup';
 import { faRunning,faFlagCheckered,faUsers,faEye,faRoadBarrier,faRoad } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -52,17 +53,22 @@ export default function History() {
       <div style={boxStyle}>
       <FontAwesomeIcon icon={faRunning} style={{ fontSize: '40px' , marginLeft: '20px'}} />  
       <h1>Seasons</h1>
-      <p className={styles.statsStyle}>7</p>
+      <p className={styles.statsStyle}>
+      <CountUp start={0} end={7} duration={4} />
+      </p>
       </div>
       <div style={boxStyle}>
         <FontAwesomeIcon icon={faFlagCheckered} style={{ fontSize: '35px', marginLeft: '60px'}} />
         <h1>Races Organised</h1>
-        <p className={styles.statsStyle}> 73</p>
+        <p className={styles.statsStyle}> 
+        <CountUp start={0} end={73} duration={4} />
+        </p>
       </div>
       <div style={boxStyle}>
         <FontAwesomeIcon icon={faUsers} style={{fontSize: '30px', marginLeft:'30px'}} />
         <h1>Participants</h1>
-        <p className={styles.statsStyle}>21K+</p>     
+        <p className={styles.statsStyle}>
+        <CountUp start={0} end={21} duration={4} />K+</p>     
       </div>
       </div>
               <div className={styles.mapContainer}>
@@ -115,17 +121,20 @@ export default function History() {
           <div style={boxStyle}>
             <FontAwesomeIcon icon={faEye} style={{fontSize: '30px', marginLeft: '30px'}} />
         <h1>Spectators</h1>
-        <p className={styles.statsStyle}>40K+</p>
+        <p className={styles.statsStyle}>
+        <CountUp start={0} end={40} duration={4} />K+</p>
       </div>
       <div style={boxStyle}>
         <FontAwesomeIcon icon={faRoadBarrier } style={{fontSize: '40px', marginLeft:'55px'}} />
       <h1>Obstacles Overcome</h1>
-        <p className={styles.statsStyle}>300K+</p>
+        <p className={styles.statsStyle}>
+        <CountUp start={0} end={300} duration={4} />K+</p>
       </div>
       <div style={boxStyle}>
       <FontAwesomeIcon icon={faRoad } style={{fontSize: '35px', marginLeft:'40px'}} />
       <h1>Kilometres Run</h1>
-      <p className={styles.statsStyle}>90K+</p>
+      <p className={styles.statsStyle}>
+      <CountUp start={0} end={90} duration={4} />K+</p>
       </div>
             </div>
           </div>

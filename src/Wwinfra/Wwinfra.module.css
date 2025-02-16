@@ -115,9 +115,10 @@
   }
 
   .head {
-    font-size: 80px;
+    font-size: 10vh;
     color: #ff8210;
-    text-align: center;
+    text-align: left;
     height: 20vh;
-    padding: 3vh;
+    padding: 5vh;
+    margin-bottom: -5vh;
   }

@@ -7,7 +7,6 @@ const Wwx = () => {
           
           <div className={styles.box}>
           <h1 className={styles.heading1}>WWX</h1>
-              <div className={styles.heading2}>OCR E<span className={styles.charcoal}>X</span>PERIENCE</div>
           </div>
       </div><div className={styles.heading3}>
       India’s only Customised & fun Obstacle Course Experiences for
@@ -23,7 +22,7 @@ it's indoors or outdoors, our unique courses promise to give participants memori
 cherish. Furthermore, our expertise extends to seamlessly orchestrating events from
 start to finish.”</p>
           </div>
-          <div>
+          <div className={styles.box4}>
           <AnimatedList />
           </div>
           </div>

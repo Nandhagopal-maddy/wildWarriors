@@ -35,7 +35,7 @@ const Wwinfra = () => {
 
   return (
     <><div>
-      <h1 className={styles.head}>Wild Warrior Obstacle Infra</h1>
+      <h1 className={styles.head}>WILD WARRIOR OBSTACLE INFRA</h1>
     </div><div className={styles.container}>
         <div className={styles.box1}>
           <Cards />
