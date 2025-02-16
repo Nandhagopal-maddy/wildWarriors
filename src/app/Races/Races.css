@@ -1,0 +1,49 @@
+.races-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:99vw;
+    overflow-x: scroll;
+    cursor: grab;
+    position: relative;
+    touch-action: none; 
+}
+.race-btn{
+    position: absolute;
+    color: orange;
+    z-index: 20;
+}
+.left-0{
+    left:0.5vw;
+}
+.right-0{
+    right:0.5vw;
+}
+.race-icon{
+    height:7vh;
+    width:4vw;
+    background-color: white;
+    border-radius: 100vw;
+    cursor: pointer;
+    transition: 300ms;
+}
+.race-icon:hover{
+    transform:scale(1.1);
+}
+.race-card{
+    height:50vh;
+    min-width:30vw;
+    background-color: white;
+    margin:1em;
+    color: black;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.races-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .races-container {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }

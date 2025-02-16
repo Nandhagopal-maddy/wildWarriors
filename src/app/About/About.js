@@ -51,22 +51,22 @@ const founders=[
         <div>
             <h1 className="about-heading">
             <div className='shoe-container-left'>
-<img className='shoe-item-left' src={'/images/shoe-6-left.png'} />
-<img className='shoe-item-left' src={'/images/shoe-5-left.png'} />
-<img className='shoe-item-left' src={'/images/shoe-4-left.png'} />
-<img className='shoe-item-left' src={'/images/shoe-3-left.png'} />
-<img className='shoe-item-left' src={'/images/shoe-2-left.png'} />
-<img className='shoe-item-left' src={'/images/show-1-left.png'} />
+<img className='shoe-item-left about' src={'/images/shoe-6-left.png'} />
+<img className='shoe-item-left about' src={'/images/shoe-5-left.png'} />
+<img className='shoe-item-left about' src={'/images/shoe-4-left.png'} />
+<img className='shoe-item-left about' src={'/images/shoe-3-left.png'} />
+<img className='shoe-item-left about' src={'/images/shoe-2-left.png'} />
+<img className='shoe-item-left about' src={'/images/show-1-left.png'} />
 </div>        
         Rugged fun, for Everyone! 
 
 <div className='shoe-container-right'>
-<img className='shoe-item' src={'/images/shoe-1.png'} />
-<img className='shoe-item' src={'/images/shoe-2-right.png'} />
-<img className='shoe-item' src={'/images/shoe-3-right.png'} />
-<img className='shoe-item' src={'/images/shoe-4-right.png'} />
-<img className='shoe-item' src={'/images/shoe-5-right.png'} />
-<img className='shoe-item' src={'/images/shoe-6-right.png'} />
+<img className='shoe-item about' src={'/images/shoe-1.png'} />
+<img className='shoe-item about' src={'/images/shoe-2-right.png'} />
+<img className='shoe-item about' src={'/images/shoe-3-right.png'} />
+<img className='shoe-item about' src={'/images/shoe-4-right.png'} />
+<img className='shoe-item about' src={'/images/shoe-5-right.png'} />
+<img className='shoe-item about' src={'/images/shoe-6-right.png'} />
 </div>
 
             </h1>
@@ -75,7 +75,7 @@ const founders=[
             <div className='row'>
                 <div className='col-md-4'>
                 <div className='about-main'>WE ARE. . .</div>
-                <img className='about-images' src={'/images/about-1-min.jpg'} />
+                <img className='about-images about' src={'/images/about-1-min.jpg'} />
                 </div>
                 <div className='col-md-4'>
                 
@@ -90,8 +90,9 @@ of India.
                 </div>
                 
                 <div className='col-md-4'>
-                <img className='about-images' src={'/images/about-2-min.jpg'} />
+                <img className='about-images about' src={'/images/about-2-min.jpg'} />
                 </div>
+                </div>  
                 <div className='vision-container'>
                 <div className='our-vision'>
                 Our vision 
@@ -111,7 +112,7 @@ of India.
                  </div>
 
                 </div>
-                <div className='founders-head'>Meet Our Founders</div>
+                <div className='founders-head twelve'>Meet Our Founders</div>
                 <div className='founders-container row'>
                 {founders.map((founder,index)=><>
                     <div className='col-md-3' key={index}>
@@ -119,7 +120,7 @@ of India.
                     </div>
                 </>)}
                 </div>
-                </div>    
+                  
             
             </div> 
         </div>

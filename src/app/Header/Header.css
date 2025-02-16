@@ -21,8 +21,8 @@ html,body{
     top: 0;
     left: 0;
     width: 100vw;
-    height: 94vh;
-    object-fit: cover; /* Ensure the video covers the entire area */
+    height: 90vh;
+    object-fit: fill; /* Ensure the video covers the entire area */
     z-index: 10; /* Ensure the video is behind the content */
   }
   a{
@@ -36,10 +36,8 @@ html,body{
     justify-content: space-between;
     align-items: flex-start;
     align-content: flex-start;
-    height:70vw;
-    min-height:400px;
-    max-height:750px;
-    min-width:300px;
+    height:60vw;
+    width:99vw;
     color:#080000;
     border-radius: 0 0 20px 20px;
     text-shadow:0 2px 6px #000a

@@ -1,29 +1,17 @@
 import React from 'react';
-
+import './Founder.css'
 const Founder = ({data}) => {
     return (
         <div>
-            <div className='founder animate__animated animate__fadeInDown'>
-            <section>
-  <div className="card">
-    <div className="card__border"></div>
-    <div className="card__border-line"></div>
-    <div className="card__inner">
-      <div className="card__img">
-        <div className="img__athlete">
-          <img className='founder-image' src={data.image}alt={data.name} />
-        </div>
-      </div>
-      <div className="card__text">
-        <h1 className="name">{data.name}</h1>
-      </div>
+<div class="card bg-dark founder-shadow">
+  <img class="card-img" src={data.image} alt="Card image" />
+  <div class="card-img-overlay founder-shadow">
+    <div className='text-founder-container'>
+    <h5 class="card-title">{data.name}</h5>
+    <p class="card-text text-slide">{data.details}</p>
     </div>
   </div>
-  <div className='founder-details'>
-        {data.details}
-      </div>
-</section>
-                </div>
+</div>
         </div>
     );
 };
