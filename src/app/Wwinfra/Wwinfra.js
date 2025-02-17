@@ -48,7 +48,7 @@ const Wwinfra = () => {
             {[...Array(9)].map((_, index) => (
               <div key={index}>
                 <img className={styles.gridItem}
-                  src={`/Infraimage${index + 1}.jpg`} // Ensure your images are named Infraimage1.jpg, Infraimage2.jpg, etc.
+                  src={`/InfraImage${index + 1}.jpg`} // Ensure your images are named Infraimage1.jpg, Infraimage2.jpg, etc.
                   alt={`Image ${index + 1}`} />
               </div>
             ))}
