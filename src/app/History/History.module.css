@@ -87,6 +87,24 @@
     font-weight: bold;
   }
 
+  .historyHead{
+    font-size: 3em;
+    font-weight: 900;
+    margin-left:1vw;
+    border: 5px solid #e35f12;
+    border-top: none;
+    border-bottom: none;
+    width: fit-content;
+    display: flex;
+  }
+  .historyIcon{
+    background-image: url('/icons/medal.svg');
+    height: 10vh;
+    width: 6vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
   @media (max-width: 768px) {
     .statsStyle {
       font-size: large;
@@ -110,5 +128,12 @@
     .india-map{
       height: auto;
       width: auto;
+    }
+    .historyHead{
+      font-size: 1.5em;
+    }
+    .historyIcon{
+      height: 4vh;
+    width: 10vw;
     }
   }

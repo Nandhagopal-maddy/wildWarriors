@@ -25,6 +25,7 @@ const AnimatedList = () => {
       initial="hidden"
       animate="visible"
       variants={listVariants}
+      className={styles.gridContainer}
       style={{ listStyleType: 'none' }}
     >
       {items.map((item, index) => (
@@ -32,6 +33,10 @@ const AnimatedList = () => {
           {item}
         </motion.li>
       ))}
+      <div className={styles.heading2}>
+        <span className={styles.wwx}>WWX</span> OCR E<span className={styles.charcoal}>X</span>PERIENCE
+      </div>
+      
     </motion.ul>
   );
 };

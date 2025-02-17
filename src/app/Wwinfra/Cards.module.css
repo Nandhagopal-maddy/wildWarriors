@@ -46,11 +46,13 @@
   width: 100%;
   height: 100%;
   padding: 20px;
- /* border: 2px solid #ff8210;*/
+ /* border: 2px solid #ff8210;
+  background-color: #ff8210;*/
   border-radius: 10px;
-  background-color: #ff8210;
-  box-shadow: 0 4px 8px #060606 ;
+ 
+  box-shadow: 0 0 2px 4px darkorange ;
   opacity: 0;
+  color:darkorange;
   transform: translateY(20px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
@@ -71,7 +73,7 @@ button.buttonActive{
   }
 
   .buttonsContainer {
-    width: 98vw;
+    width: 90vw;
     margin-bottom: 2vh;
     height: fit-content;
     justify-content: flex-end;
@@ -83,7 +85,7 @@ button.buttonActive{
   }
 
   .cardsWrapper {
-    width: 100vw;
+    width: 90vw;
     height: 30vh;
   }
 

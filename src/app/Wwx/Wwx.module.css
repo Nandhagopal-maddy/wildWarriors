@@ -1,27 +1,25 @@
 
 .heading1 {
-    margin-left: 2vw;
-    font-size: 40px;
+    font-size: 4em;
     font-weight: 500;
     color: #f77f07;
     /* text-align: center; */
     /* height: 11vh; */
-    margin-top: 12vh;
-}
-:root {
-  --e-global-color-66df98e: #f0eded50; 
-  --e-global-color-f047208: #faf7f782;/* Define the custom property */
+    margin-top: 6vh;
 }
 
 .heading2 {
-  color: var(--e-global-color-66df98e);
+  margin-top: -5vh;
+  color: #f0eded50;
   -webkit-text-stroke-width: 1px;
   stroke-width: 1px;
   -webkit-text-stroke-color: var(--e-global-color-primary);
   stroke: var(--e-global-color-primary);
-  text-align: left;
-    font-size: 65px;
-    font-style: italic;/*
+  text-align: center;
+    font-size: 4em;
+    font-style: italic;
+    grid-area: heading;
+    /*
     color: #0d0d0c;
     margin-left: 15vw;
     margin-right: 10vw;
@@ -35,11 +33,12 @@
 
 .heading3 {
 
-  font-size: 30px;
+  font-size: 2.1em;
   text-align: center;
   font-style: italic;
   font-weight: bold;
   background-color: #69696994;
+  margin-top:7vh;
 }
 .quote{
   height: 10vh;
@@ -56,18 +55,10 @@
 .box {
     background-color: rgb(12, 12, 12);
     border-radius: 10px;
-    margin-left: 11vw;
+    margin-left: 6vw;
     margin-right: 12vw;
     height: 20vh;
     display: flex;
-}
-
-.xstyle {
-  color: rgb(8, 3, 1);
-    font-family: 'Bristle Brush Script';
-    width: 50px;
-    font-size: 75px;
-    font-weight: bold;
 }
 
 /* Import the Charcoal font */
@@ -81,7 +72,7 @@
     width: 50px;
     font-size: 75px;
     font-weight: bold;
-    color: var(--e-global-color-66df98e);
+    color: #f0eded50;
     -webkit-text-stroke-width: 1px;
     stroke-width: 1px;
     -webkit-text-stroke-color: var(--e-global-color-primary);
@@ -91,11 +82,11 @@
   .box1 {
     background-color: #0b0601;
     color: #e0e0e0;
-    height: 18vh;
     width: 80vw;
     padding: 10px;
     border-radius: 10px;
     margin-left: 5vw;
+    margin-bottom: 5vh;
     text-align: center;
     display: flex;
   }
@@ -120,15 +111,102 @@
   }
 
   .box3 {
-    background-color: #ff8210;
+    background-color:#0b0601;
     border-radius: 10px;
-    font-weight: 700;
-    width: 55vw;
+    font-weight: 1000;
+    width: 35vw;
     text-align: center;
-    height: 10vh;
-    padding: 10px;
-    margin-right: 15vh;
-    margin-left: 45vh;
+    height: 17vh;
+    padding: 1vh;
+    font-style:italic;
+    font-size: large;
+    margin-right: 10vh;
+    margin-left: 13vh;
+    margin-top: 0vh;
+    border: 2px solid #f77f07;
+    color: #f77f07;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
   
+  .box4 {
+    display: flex;
+  }
+
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "item1 item2"
+    "heading heading"
+    "item3 item4";
+    gap: 10px;
+    list-style-type: none;
+    padding: 0;
+  }
+  .gridItem:nth-child(1) {
+    grid-area: item1;
+  }
   
+  .gridItem:nth-child(2) {
+    grid-area: item2;
+  }
+  
+  .gridItem:nth-child(3) {
+    grid-area: item3;
+  }
+  
+  .gridItem:nth-child(4) {
+    grid-area: item4;
+  }
+  .wwx{
+    color:#f3841c;
+    font-weight: 800;
+  }
+
+  @media (max-width: 768px) {
+    .heading1 {
+      font-size: 2em;
+      margin-top: 3vh;
+    }
+
+    .heading2 {
+      font-size: 1.9em;
+      margin-top: 0vh;
+    }
+
+    .heading3 {
+      font-size: 1.5em;
+      margin-top: 3vh;
+    }
+
+    .pointerBox, .box, .box3 {
+      height: 15vh;
+      margin-left: 6.5vw;
+      margin-right: 5vw;
+      font-size: 0.7em;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    .list {
+      width: 80vw;
+    }
+    .gridContainer {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas:
+      "item1 item2"
+      "heading heading"
+      "item3 item4";
+    }
+    .box4{
+      margin-top:2vh;
+    }
+
+    .gridItem {
+      margin-bottom: 10px;
+    }
+  }

@@ -115,11 +115,26 @@
   }
 
   .head {
-    font-size: 80px;
-    color: #ff8210;
-    text-align: center;
-    height: 20vh;
-    padding: 3vh;
+    font-size: 3em;
+    text-align: left;
+    margin-bottom: 5vh;
+    font-weight: 800;
+    margin-top:7vh;
+    border: 5px solid #e35f12;
+    border-top: none;
+    border-bottom: none;
+    width: fit-content;
+    margin-left:2vw;
+    display: flex;
+  }
+  .InfraHeadIcon{
+    background-image: url('/icons/ladder.svg');
+    height: 10vh;
+    width: 6vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: rotate(90deg);
   }
   @media (max-width: 768px) {
     .container {
@@ -132,8 +147,8 @@
       padding: 0px;
     }
     .box2{
-      padding: 0px;
-      width:86%;
+      width: 80%;
+      margin-right: 5vw;
     }
 
     .InfraHeader {
@@ -141,9 +156,12 @@
     }
 
     .head {
-      font-size: 3em;
+      font-size: 1.5em;
       font-weight: bold;
-
+    }
+    .InfraHeadIcon{
+      height: 6vh;
+    width: 14vw;
     }
     .gridItem{
       padding: 0px;
