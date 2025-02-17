@@ -1,0 +1,139 @@
+.historyContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 110vh;
+    padding: 0 2rem;
+  }
+  
+  .mapContainer {
+    position: relative;
+  }
+  
+  .icon {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icon img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .icon span {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #fffefc;
+  }
+
+.locatorsName {
+    color: azure;
+    font-style: italic;
+}
+
+.india-map{
+    height:98vh;
+    width:40vw;
+}
+
+.containerBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .box {
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+
+  .statsStyle {
+    text-align: center;
+    font-size: xxx-large;
+  }
+
+  .containerStyle{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #000;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgb(249, 137, 0);
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin-top: 7vh;
+    background-color: #ff8210;
+  }
+  .boxStyle{
+    margin-left: 15px;
+    margin-right: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ff8210;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+    height: 30vh;
+    font-weight: bold;
+  }
+
+  .historyHead{
+    font-size: 3em;
+    font-weight: 900;
+    margin-left:1vw;
+    border: 5px solid #e35f12;
+    border-top: none;
+    border-bottom: none;
+    width: fit-content;
+    display: flex;
+  }
+  .historyIcon{
+    background-image: url('/icons/medal.svg');
+    height: 10vh;
+    width: 6vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  @media (max-width: 768px) {
+    .statsStyle {
+      font-size: large;
+    }
+    .historyContainer{
+      align-items: flex-start;
+      justify-content: space-evenly;
+      min-height: fit-content;
+      padding: 0 0rem;
+      flex-direction: column;
+    }
+    .containerStyle{
+      flex-direction: row;
+      margin-left: 1.5vw;
+    }
+    .boxStyle{
+      margin:0;
+      height:fit-content;
+      padding:1.2vh;
+    }
+    .india-map{
+      height: auto;
+      width: auto;
+    }
+    .historyHead{
+      font-size: 1.5em;
+    }
+    .historyIcon{
+      height: 4vh;
+    width: 10vw;
+    }
+  }

@@ -1,0 +1,197 @@
+.intro-container{
+margin-top:5vh;
+}
+.about-main{
+    font-size:4em;
+    font-weight: 900;
+    margin-bottom:5vh;
+    margin-left:2vw;
+}
+.about-content{
+    font-size:1.2em;
+    font-weight: 300;
+    margin-top:20vh;
+    font-style: italic;
+}
+
+.about-heading{
+    font-size: xxx-large;
+    font-weight: 900;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.about-images{
+    height:75vh;
+    padding:2vh 3vw;   
+}
+
+.shoe-container-right{
+    display: flex;
+    margin-left: 1vw;
+    align-items: baseline;
+}
+.shoe-container-left{
+    display: flex;
+    margin-right: 1vw;
+    align-items: baseline;
+}
+.shoe-item{
+    height: calc(1.5em - (var(--index) * 0.1em));
+    margin-left:0.2em;
+}
+.shoe-item-left{
+    height: calc(1.5em - (var(--index) * 0.1em));
+    margin-right:0.2em;
+}
+.shoe-item:nth-child(1) { --index: 0; }
+.shoe-item:nth-child(2) { --index: 1; }
+.shoe-item:nth-child(3) { --index: 2; }
+.shoe-item:nth-child(4) { --index: 3; }
+.shoe-item:nth-child(5) { --index: 5; }
+.shoe-item:nth-child(6) { --index: 6; }
+
+.shoe-item-left:nth-child(1) { --index: 6; }
+.shoe-item-left:nth-child(2) { --index: 5; }
+.shoe-item-left:nth-child(3) { --index: 3; }
+.shoe-item-left:nth-child(4) { --index: 2; }
+.shoe-item-left:nth-child(5) { --index: 1; }
+.shoe-item-left:nth-child(6) { --index: 0; }
+
+.founder-image{
+    height:20vh;
+}
+.founders-container{
+    display: flex;
+    justify-content: center;
+    margin-top:10vh;
+    width:99vw;
+    margin-left:0.3vw;
+}
+.our-vision{
+    font-size: 10em;
+    font-weight: 900;
+}
+.strength-img{
+    background: #e35f12;
+    border-radius: 100%;
+    padding: 0.5em;
+    height: 34vh;
+    width:20vw;
+}
+.vision-image-container{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+.middle-content{
+    font-size: 4em;
+    font-weight: 900;
+    text-align: center;
+}
+.middle-container{
+    padding: 0.6em;
+    text-align: center;
+}
+.orange{
+    background-color: #e35f12;
+    padding:0.3em;
+    border-radius: 10px 0 10px 0;
+    font-weight: 600;
+}
+.community-container{
+    padding: 0.3em;
+    font-size: 3em;
+    font-weight: lighter;
+    align-items: baseline;
+}
+.m1{
+    font-weight: bold;
+    font-size: 2em;
+}
+.founders-head{
+    margin-top:7vh;
+}
+.twelve {
+    font-size: 3em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 28%;
+    white-space: nowrap;
+    width: fit-content;
+  }
+  .twelve:before {
+    background-color: #e35f12;
+    content: "";
+    display: block;
+    height: 10px;
+    width: 10vw;
+    margin-bottom: 5px;
+    animation: slide-to-left 500ms ease-in;
+  }
+  .twelve:after {
+    background-color: #e35f12;
+    content: "";
+    display: block;
+    position: absolute;
+    left: 61vw;
+    height: 10px;
+    width: 10vw;
+    margin-bottom: .25em;
+    animation: slide-to-right 500ms ease-in;
+  }
+    @keyframes slide-to-left {
+        0% {
+        transform: translateX(100%);
+        }
+        100% {
+        transform: translateX(0);
+        }
+    }
+    @keyframes slide-to-right {
+        0% {
+        transform: translateX(-100%);
+        }
+        100% {
+        transform: translateX(0);
+        }
+    }
+    @media (max-width: 768px) {
+        .our-vision {
+            font-size: 8em !important;
+        }
+        .vision-image-container{
+            margin-left: 0vw !important;
+        }
+        .vision-image-container img{
+            width:82vw;
+        }
+        .community-container{
+            font-size: 1em !important;
+        }
+        .founders-head{
+            margin-top:3vh;
+        }
+        .twelve{
+            font-size: 2.1em;
+            margin-left: 4%;
+        }
+        .twelve:before{
+            width:25vw;
+        }
+        .twelve:after{
+            width:25vw;
+            left:72vw;
+        }
+        .founders-container{
+            width: 95vw;
+            margin-left: 2vw;
+            margin-top:4vh;
+        }
+        .founders-container .founder{
+            margin-bottom: 5vh;
+            
+        }
+    }

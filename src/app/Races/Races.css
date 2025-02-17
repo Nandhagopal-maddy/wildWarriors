@@ -1,0 +1,201 @@
+.races-container{
+    width:97vw;
+    margin:0vw 1vw;
+    margin-top:20vh;
+    position: relative;
+}
+.race-head{
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 3em;
+    border: 5px solid #e35f12;
+    border-top: none;
+    border-bottom: none;
+    width: fit-content;
+    padding: 0vw 0.5vw;
+    margin-bottom: 5vh;
+}
+.race-btn{
+    position: absolute;
+    color: #e35f12;
+    z-index: 20;
+}
+.left-0{
+    left:0.5vw;
+}
+.right-0{
+    right:0.5vw;
+}
+.race-icon{
+    height:7vh;
+    width:4vw;
+    background-color: white;
+    border-radius: 100vw;
+    cursor: pointer;
+    transition: 300ms;
+}
+.race-icon:hover{
+    transform:scale(1.1);
+}
+.race-card{
+    min-width:30vw;
+    background-color: #272727;
+    margin:1em;
+    color: black;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px white
+}
+.race-card:hover{
+    transform: scale(1.01);
+}
+
+.races-container::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .races-container {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+  }
+.calendar{
+    background-image: url('/icons/calendar.svg');
+    height: 10vh;
+    width: 6vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.upcoming-card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:74vh;
+}
+.races-card{
+    background: none;
+    color: white;
+    margin: 0vh 10vw;   
+    text-align: center;
+}
+.back{
+    height:73vh;
+    align-items: center;
+    justify-content: space-evenly;
+    background: rgba(34, 34, 34, 0.8)
+}
+
+.big{
+    font-size: 3em;
+    font-weight: 900;
+    margin-top: 1vh;
+}
+.races-card img{
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px#272727 ;
+    
+}
+.upcoming-poster{
+    height:60vh;
+
+}
+.ur-race-name{
+    font-size: 1.3em;
+    padding-left: 0.5vw;
+    font-weight: 900;
+    margin-top:1vh;
+    font-style: italic;
+}
+
+.race-location{
+    height:3vh;
+    width: 1vw;
+}
+.location-name{
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top:1vh;
+}
+.race-button{
+    background-color: #e35f12;
+    color: white;
+    padding: 0.5vw 1vw;
+    cursor: pointer;
+    transition: 300ms;
+}
+.race-button:hover{
+    transform: scale(1.03);
+}
+.prize-money{
+    font-size: 5em;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.race-description{
+    font-size: 0.8em;
+    font-weight: 700;
+    margin-top: 1vh;
+    
+}
+@media (max-width: 768px) {
+    .races-container {
+        width: 100vw;
+        margin: 0;
+        margin-top: 2vh;
+    }
+    .race-head {
+        font-size: 1.5em;
+        padding: 0 1vw;
+        margin-bottom: 1vh;;
+    }
+    .race-card {
+        min-width: 80vw;
+        margin: 1em 0;
+    }
+    .calendar {
+        height: 4vh;
+        width: 7vw;
+    }
+    .upcoming-card-container {
+        flex-direction: column;
+        height: auto;
+    }
+    .races-card {
+        margin: 2vh 0;
+    }
+    .back {
+        height: auto;
+        padding: 2vh 0;
+        margin: 0px 12vw;
+        line-height: 4.69vh;
+    }
+    .big {
+        font-size: 2em;
+    }
+    .upcoming-poster {
+        height: 40vh;
+    }
+    .ur-race-name {
+        font-size: 1em;
+    }
+    .race-location {
+        height: 2vh;
+        width: 2vw;
+    }
+    .location-name {
+        font-size: 0.8em;
+    }
+    .prize-money {
+        font-size: 3em;
+    }
+    .race-description {
+        font-size: 0.7em;
+    }
+}
