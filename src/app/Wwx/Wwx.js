@@ -1,3 +1,4 @@
+"use client";
 import React from 'react';
 import styles from './Wwx.module.css'
 import AnimatedList from './AnimatedList';

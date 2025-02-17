@@ -10,6 +10,7 @@ import Wwinfra from "./Wwinfra/Wwinfra";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
+
 export default function Home() {
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap");
